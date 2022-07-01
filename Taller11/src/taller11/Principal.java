@@ -26,8 +26,8 @@ public class Principal {
         mn.calcularvalorcancelartotal();
 
         MenuNiños mn2 = new MenuNiños("Niños 02", 3);
-          mn.establecerValorPorcionHelada(1.50);
-        mn.establecerValorPorcionPastel(1);
+          mn2.establecerValorPorcionHelada(1.50);
+        mn2.establecerValorPorcionPastel(1);
         mn2.calcularvalorcancelartotal();
         listamenus.add(mn);
         listamenus.add(mn2);

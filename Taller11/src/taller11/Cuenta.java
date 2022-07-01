@@ -18,8 +18,13 @@ public class Cuenta {
     private double subtotal;
     private double iva = 0.12;
 
-    public Cuenta() {
+     public Cuenta() {
 
+    }
+    public Cuenta(String n, ArrayList<Menu> listam,double stotal) {
+nombreCliente = n;
+listamenu = listam;
+subtotal = stotal;
     }
 
     public void establecerNombre(String n) {

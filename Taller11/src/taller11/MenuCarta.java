@@ -55,10 +55,10 @@ public class MenuCarta extends Menu {
     public String toString() {
         String cadena = String.format("Menu a la carta\n%s", super.toString());
         cadena = String.format("%s"
-                + "Valor porcion guarnicion: %.2f\n"
-                + "Valor bebida: %.2f\n"
-                + "Porcentaje Adicional: %.2f\n"
-                + "Valor menu: %.2f\n"
+                + "\t\tValor porcion guarnicion: %.2f\n"
+                + "\t\tValor bebida: %.2f\n"
+                + "\t\tPorcentaje Adicional: %.2f\n"
+                + "\t\tValor menu: %.2f\n"
                 + "-------------------------------------------------------------\n", 
                 cadena,
                 obtenerValorporciondeGuarnicion(),
