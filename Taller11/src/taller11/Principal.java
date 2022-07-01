@@ -9,13 +9,12 @@ package taller11;
  *
  * @author reroes
  */
-public class Taller11 {
+public class Principal {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        MenuNiños mn1 = new MenuNiños("Cajita Feliz", 7.50, 7.50, 0.90, 1.50);
+        MenuNiños mn2 = new MenuNiños();
     }
-    
+
 }
