@@ -14,15 +14,8 @@ public class MenuCarta extends Menu {
     private double valorBebida;
     private double porcentajeAdicional;//en relacion del valor inicial del menu
 
-    public MenuCarta() {
-
-    }
-
-    public MenuCarta(String nP, double vinicialM, double vPG, double vBebida) {
+    public MenuCarta(String nP, double vinicialM) {
         super(nP, vinicialM);
-        valorporciondeGuarnicion = vPG;
-        valorBebida = vBebida;
-
     }
 
     public void establecerValorporciondeGuarnicion(double vPG) {
@@ -62,10 +55,12 @@ public class MenuCarta extends Menu {
     public String toString() {
         String cadena = String.format("Menu a la carta\n%s", super.toString());
         cadena = String.format("%s"
-                + "Valor porcion guarnicion:%.2f\n"
-                + "Valor bebida:%.2f\n"
-                + "Porcentaje Adicional:%.2f\n"
-                + "Valor menu:%.2f\n", cadena,
+                + "Valor porcion guarnicion: %.2f\n"
+                + "Valor bebida: %.2f\n"
+                + "Porcentaje Adicional: %.2f\n"
+                + "Valor menu: %.2f\n"
+                + "-------------------------------------------------------------\n", 
+                cadena,
                 obtenerValorporciondeGuarnicion(),
                 obtenerValorBebida(),
                 obtenerPorcentajeAdicional(),

@@ -28,8 +28,8 @@ public abstract class Menu {
         valorMenu = vMenu;
     }
 
-    public void establecerValorinicialMenu(double vinicialMenu) {
-        valorinicialMenu = vinicialMenu;
+    public void establecerValorinicialMenu(double vinicialM) {
+        valorinicialMenu = vinicialM;
     }
 
     public String obtenerNombrePlato() {
@@ -48,8 +48,8 @@ public abstract class Menu {
 
     @Override
     public String toString() {
-        String cadena = String.format("Nombre Plato:%s\n"
-                + "Valor menu inicial:%.2f\n", obtenerNombrePlato(),
+        String cadena = String.format("\t\tNombre Plato:%s\n"
+                + "\t\tValor menu inicial:%.2f\n", obtenerNombrePlato(),
                 obtenerValorinicialMenu());
         return cadena;
     }

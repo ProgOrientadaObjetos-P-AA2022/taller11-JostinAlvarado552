@@ -13,22 +13,16 @@ public class MenuNiños extends Menu {
     private double valorPorcionHelada;
     private double valorPorcionPastel;
 
-    public MenuNiños() {
-
+    public MenuNiños(String nP, double vinicialM) {
+        super(nP, vinicialM);
     }
 
-    public MenuNiños(String nombrePl, double valorinicialM, double vph, double vpp) {
-        super(nombrePl, valorinicialM);
-        valorPorcionHelada = vph;
-        valorPorcionPastel = vpp;
+    public void establecerValorPorcionHelada(double vph) {
+        this.valorPorcionHelada = vph;
     }
 
-    public void establecerValorPorcionHelada(double valorPorcionHelada) {
-        this.valorPorcionHelada = valorPorcionHelada;
-    }
-
-    public void establecerValorPorcionPastel(double valorPorcionPastel) {
-        this.valorPorcionPastel = valorPorcionPastel;
+    public void establecerValorPorcionPastel(double vpp) {
+        this.valorPorcionPastel = vpp;
     }
 
     public double obtenerValorPorcionHelada() {
@@ -40,7 +34,7 @@ public class MenuNiños extends Menu {
     }
 
     @Override
-    public void  calcularvalorcancelartotal() {
+    public void calcularvalorcancelartotal() {
         valorMenu = valorinicialMenu + valorPorcionHelada + valorPorcionPastel;
     }
 
@@ -50,11 +44,12 @@ public class MenuNiños extends Menu {
 
     @Override
     public String toString() {
-        String cadena = String.format("Menu de Ninos\n%s", super.toString());
+        String cadena = String.format("Menu de Niños\n%s", super.toString());
         cadena = String.format("%s"
-                + "Valor Porcion Helado:%.2f\n"
-                + "Valor Porcion Pastel:%.2f\n"
-                + "Valor Menu:%.2f\n", cadena,
+                + "\t\tValor Porcion Helado:%.2f\n"
+                + "\t\tValor Porcion Pastel:%.2f\n"
+                + "\t\tValor Menu:%.2f\n"
+                + "-------------------------------------------------------------\n", cadena,
                 obtenerValorPorcionHelada(),
                 obtenerValorPorcionPastel(),
                 obtenerValorMenu()

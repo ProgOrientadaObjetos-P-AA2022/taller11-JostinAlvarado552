@@ -13,14 +13,9 @@ public class MenudelDia extends Menu {
     private double valorPostre;
     private double valorBebida;
 
-    public MenudelDia() {
 
-    }
-
-    public MenudelDia(String nP, double vinicialM, double vpostre, double vbebida) {
+    public MenudelDia(String nP, double vinicialM) {
         super(nP, vinicialM);
-        valorPostre = vpostre;
-        valorBebida = vbebida;
     }
 
     public void establecerValorPostre(double vP) {
@@ -52,9 +47,10 @@ public class MenudelDia extends Menu {
     public String toString() {
         String cadena = String.format("Menu del dia\n%s", super.toString());
         cadena = String.format("%s"
-                + "Valor Postre:%.2f\n"
-                + "Valor Bebida:%.2f\n"
-                + "Valor Menu:%.2f\n", cadena,
+                + "\t\tValor Postre:%.2f\n"
+                + "\t\tValor Bebida:%.2f\n"
+                + "\t\tValor Menu:%.2f\n"
+                + "-------------------------------------------------------------\n", cadena,
                 obtenerValorPostre(),
                 obtenerValorBebida(),
                 obtenerValorMenu());
