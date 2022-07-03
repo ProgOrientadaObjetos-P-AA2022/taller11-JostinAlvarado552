@@ -34,7 +34,7 @@ public class Principal02 {
         // Lista de Menus
         ArrayList<Menu> lista = new ArrayList<>();
 
-        for (int i = 0; i < datos001.length; i++) {
+        for (int i = 0; i < 1; i++) {
 
             MenuNiños mn = new MenuNiños(datos001[i][0], Double.parseDouble(datos001[i][1]));
             mn.establecerValorPorcionHelada(Double.parseDouble(datos001[i][2]));
@@ -43,44 +43,87 @@ public class Principal02 {
             lista.add(mn);
 
         }
-
-        for (int i = 1; i < datos002.length; i++) {
-            MenuNiños mn2 = new MenuNiños(datos002[i][0], Double.parseDouble(datos002[i][1]));
-            mn2.establecerValorPorcionHelada(Double.parseDouble(datos002[i][2]));
-            mn2.establecerValorPorcionPastel(Double.parseDouble(datos002[i][3]));
+        for (int i = 1; i < 2; i++) {
+            MenuNiños mn2 = new MenuNiños(datos001[i][0], Double.parseDouble(datos001[i][1]));
+            mn2.establecerValorPorcionHelada(Double.parseDouble(datos001[i][2]));
+            mn2.establecerValorPorcionPastel(Double.parseDouble(datos001[i][3]));
             mn2.calcularvalorcancelartotal();
             lista.add(mn2);
-
         }
-
-        for (int i = 2; i < datos002.length; i++) {
-            MenuNiños mn3 = new MenuNiños(datos002[i][0], Double.parseDouble(datos002[i][1]));
-            mn3.establecerValorPorcionHelada(Double.parseDouble(datos002[i][2]));
-            mn3.establecerValorPorcionPastel(Double.parseDouble(datos002[i][3]));
+        for (int i = 2; i < 3; i++) {
+            MenuNiños mn3 = new MenuNiños(datos001[i][0], Double.parseDouble(datos002[i][1]));
+            mn3.establecerValorPorcionHelada(Double.parseDouble(datos001[i][2]));
+            mn3.establecerValorPorcionPastel(Double.parseDouble(datos001[i][3]));
             mn3.calcularvalorcancelartotal();
             lista.add(mn3);
-
         }
 
-        for (int i = 0; i < datos003.length; i++) {
-            MenuEconomico mE1 = new MenuEconomico((datos003[i][0]), Double.parseDouble(datos003[i][1]));
+        for (int i = 0; i < 1; i++) {
+            MenuEconomico mE1 = new MenuEconomico((datos002[i][0]), Double.parseDouble(datos002[i][1]));
             mE1.establecerPorcentajeDescuento(Double.parseDouble(datos003[i][2]));
             mE1.calcularvalorcancelartotal();
             lista.add(mE1);
         }
 
-        for (int i = 1; i < datos003.length; i++) {
-            MenuEconomico mE2 = new MenuEconomico((datos003[i][0]), Double.parseDouble(datos003[i][1]));
-            mE2.establecerPorcentajeDescuento(Double.parseDouble(datos003[i][2]));
+        for (int i = 1; i < 2; i++) {
+            MenuEconomico mE2 = new MenuEconomico((datos002[i][0]), Double.parseDouble(datos002[i][1]));
+            mE2.establecerPorcentajeDescuento(Double.parseDouble(datos002[i][2]));
             mE2.calcularvalorcancelartotal();
             lista.add(mE2);
         }
 
-        for (int i = 1; i < datos003.length; i++) {
-            MenuEconomico mE3 = new MenuEconomico((datos003[i][0]), Double.parseDouble(datos003[i][1]));
-            mE3.establecerPorcentajeDescuento(Double.parseDouble(datos003[i][2]));
+        for (int i = 2; i < 3; i++) {
+            MenuEconomico mE3 = new MenuEconomico((datos002[i][0]), Double.parseDouble(datos002[i][1]));
+            mE3.establecerPorcentajeDescuento(Double.parseDouble(datos002[i][2]));
             mE3.calcularvalorcancelartotal();
             lista.add(mE3);
+        }
+        for (int i = 0; i < 1; i++) {
+            MenudelDia md = new MenudelDia((datos003[i][0]), Double.parseDouble(datos003[i][1]));
+            md.establecerValorBebida(Double.parseDouble(datos003[i][2]));
+            md.establecerValorPostre(Double.parseDouble(datos003[i][3]));
+            md.calcularvalorcancelartotal();
+            lista.add(md);
+        }
+        for (int i = 1; i < 2; i++) {
+            MenudelDia md2 = new MenudelDia((datos003[i][0]), Double.parseDouble(datos003[i][1]));
+            md2.establecerValorBebida(Double.parseDouble(datos003[i][2]));
+            md2.establecerValorPostre(Double.parseDouble(datos003[i][3]));
+            md2.calcularvalorcancelartotal();
+            lista.add(md2);
+        }
+        for (int i = 2; i < 3; i++) {
+            MenudelDia md3 = new MenudelDia((datos003[i][0]), Double.parseDouble(datos003[i][1]));
+            md3.establecerValorBebida(Double.parseDouble(datos003[i][2]));
+            md3.establecerValorPostre(Double.parseDouble(datos003[i][3]));
+            md3.calcularvalorcancelartotal();
+            lista.add(md3);
+        }
+
+        for (int i = 0; i < 1; i++) {
+            MenuCarta mC1 = new MenuCarta((datos004[i][0]), Double.parseDouble(datos004[i][1]));
+            mC1.establecerValorporciondeGuarnicion(Double.parseDouble(datos004[i][2]));
+            mC1.establecerValorBebida(Double.parseDouble(datos004[i][2]));
+            mC1.establecerPorcentajeAdicional(Double.parseDouble(datos004[i][2]));
+            mC1.calcularvalorcancelartotal();
+            lista.add(mC1);
+        }
+        for (int i = 1; i < 2; i++) {
+            MenuCarta mC2 = new MenuCarta((datos004[i][0]), Double.parseDouble(datos004[i][1]));
+            mC2.establecerValorporciondeGuarnicion(Double.parseDouble(datos004[i][2]));
+            mC2.establecerValorBebida(Double.parseDouble(datos004[i][2]));
+            mC2.establecerPorcentajeAdicional(Double.parseDouble(datos004[i][2]));
+            mC2.calcularvalorcancelartotal();
+            lista.add(mC2);
+        }
+
+        for (int i = 2; i < 3; i++) {
+            MenuCarta mC3 = new MenuCarta((datos004[i][0]), Double.parseDouble(datos004[i][1]));
+            mC3.establecerValorporciondeGuarnicion(Double.parseDouble(datos004[i][2]));
+            mC3.establecerValorBebida(Double.parseDouble(datos004[i][2]));
+            mC3.establecerPorcentajeAdicional(Double.parseDouble(datos004[i][2]));
+            mC3.calcularvalorcancelartotal();
+            lista.add(mC3);
         }
 
         for (int i = 0; i < lista.size(); i++) {
